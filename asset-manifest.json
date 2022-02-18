@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/recipes-app-with-react-mui-redux/static/css/main.f9b07f50.css",
+    "main.js": "/recipes-app-with-react-mui-redux/static/js/main.7459b3bd.js",
+    "static/js/787.55dca6ef.chunk.js": "/recipes-app-with-react-mui-redux/static/js/787.55dca6ef.chunk.js",
+    "index.html": "/recipes-app-with-react-mui-redux/index.html",
+    "main.f9b07f50.css.map": "/recipes-app-with-react-mui-redux/static/css/main.f9b07f50.css.map",
+    "main.7459b3bd.js.map": "/recipes-app-with-react-mui-redux/static/js/main.7459b3bd.js.map",
+    "787.55dca6ef.chunk.js.map": "/recipes-app-with-react-mui-redux/static/js/787.55dca6ef.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f9b07f50.css",
+    "static/js/main.7459b3bd.js"
+  ]
+}
