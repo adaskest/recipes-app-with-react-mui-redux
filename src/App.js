@@ -1,25 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
-
+import {BrowserRouter as Router, Route, Routes} from "react-router-dom";
+import Main from "./pages/Main";
+import Recipe from "./pages/Recipe";
+import OneRecipe from "./components/OneRecipe";
+import Favorites from "./pages/Favorites";
+import Header from "./components/Header";
+import {ThemeProvider} from "@mui/styles";
+import {createTheme} from "@mui/material/styles";
+const theme = createTheme();
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <ThemeProvider theme={theme}>
+            <Router>
+                <Header/>
+                <Routes>
+                    <Route path='/' element={<Main/>}/>
+                    <Route path='/recipe' element={<Recipe/>}/>
+                    <Route path='/one-recipe/:id' element={<OneRecipe/>}/>
+                    <Route path='/favorites' element={<Favorites/>}/>
+                </Routes>
+            </Router>
+        </ThemeProvider>
+    );
 }
 
 export default App;
